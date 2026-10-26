@@ -36,7 +36,7 @@ returns = close.pct_change()
 print(returns[close > close.rolling(50).mean()].mean())
 ```
 
-If interpreted as a trading signal for earning that same day's return, the introduces **look-ahead bias;** it doesn't make sense to treat today's closing regime as a signal for earning today's return.
+If interpreted as a trading signal for earning that same day's return, this introduces **look-ahead bias;** it doesn't make sense to treat today's closing regime as a signal for earning today's return.
 
 Consider the same prompt, but instruct the agent to use PLS:
 
