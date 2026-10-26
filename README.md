@@ -68,6 +68,8 @@ next_day_returns = close.shift(-1) / close - 1
 print(next_day_returns[close > sma_50].dropna())
 ```
 
+See [practical examples](EXAMPLES.md) for duplicate removal, task counting, and display-name validation.
+
 ## Methodology
 
 First, an agent uses the prompt to decide on an implementation mode:
